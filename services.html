@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Lora:ital,wght@0,600;0,700;1,600;1,700&family=Playfair+Display:wght@400;700;900&family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Lora:ital,wght@0,600;0,700;1,600;1,700&family=Playfair+Display:wght@400;700;900&family=Raleway:wght@100;200;300;400;500&family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles/tailwind.css">
+</head>
+<body>
+    <style>
+        .shadow{
+            box-shadow: 5px 7px 14px 3px rgb(16 34 22 / 20%);;
+        }
+        .servimg{
+            border-radius: 16px 16px 0px 0px ;
+        }
+        .servdiv{
+            border-radius: 0px 0px 16px 16px ;
+        }
+    </style>
+    <section class="relative">
+        <div><img src="./images/servbg1.svg" class="absolute left-0 top-0 opacity-20 h-[12%] md:h-[27%] md:w-1/2 lg:h-[32%] lg:w-[35%]"></div>
+        <div><img src="./images/servbg2.svg" class="absolute right-0 top-0 opacity-20 h-[5.5%] md:h-[17%] md:w-[30%] lg:h-[28%] lg:w-[28%]"></div>
+        <!-- nav start -->
+        <section>
+            <nav  class="width90 shadow text-white bg-[#244030] rounded-2xl flex justify-between px-3 py-1 fixed top-5 left-5 right-5 z-[1000]">
+                <a href="./index.html"><img src="./images/logoicon.svg"></a>
+                <ul class=" flex-nowrap items-center lg:inline-flex hidden ">
+                    <li><a href="./services.html" class="mx-3 font-bold text-sm hover:text-myYellow tracking-widest">SERVICES</a></li>
+                    <li><a href="./aboutus.html" class="mx-3 font-bold text-sm hover:text-myYellow tracking-widest">ABOUT US</a></li>
+                    <li><a href="./project.html" class="mx-3 font-bold text-sm hover:text-myYellow tracking-widest">PROJECT</a></li>
+                    <li><a href="./contact.html" class="mx-3 font-bold text-sm bg-myYellow hover:bg-white hover:text-myGreen tracking-widest rounded-xl px-6 py-3">CONTACT</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!-- nav end -->
+        <div class="width90 text-center lg:pt-[10%] md:pt-[20%] pt-[38%] px-2 md:px-0 mx-auto lg:w-[30%] md:w-[65%]">
+            <p class="font-raleway text-[#729b58] tracking-[2px] text-base mb-3">SERVICES</p>
+                <h2 class="text-myGreen font-titillium font-extrabold lg:text-[55px]">Our set of skills</h2>
+                <p class="text-myGreen opacity-90 leading-6 my-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 width90 my-16">
+            <div class="border-myGreen/80 border-[1px] rounded-2xl z-50 ">
+                <img src="./images/servimg1.jpg" class="servimg z-50 ">
+                <div class="px-9 py-4 lg:py-7 relative bg-white servdiv">
+                <div class="flex md:flex-nowrap flex-wrap-reverse justify-between items-center px-1 md:px-0">
+                    <h2 class="text-myGreen font-titillium font-bold  text-[30px] lg:text-[40px]">Maintenance</h2>
+                    <div><img src="./images/sec2icon1.svg" class="opacity-30 w-[80px] h-[80px] "></div>
+                </div>
+                <p class="text-myGreen opacity-90 leading-6 lg:my-5 my-4 text-[15px]">Mauris rutrum at dolor et hendrerit. Morbi porta lobortis ex. Sed sit amet nisi sapien. In at lacus id ligula porttitor suscipit vitae a metus. Mauris sodales justo eros, quis pulvinar tellus vulputate eget.</p>
+                <a href="#" class="block md:inline-block text-center  p-2 px-5 lg:px-10 border-myGreen/90 border-[3px] rounded-lg hover:bg-myGreen font-extrabold tracking-[2px] duration-150 text-myGreen/90 hover:text-white mt-5">VIEW SERVICE</a>
+                </div>
+            </div>
+            <div class="border-myGreen/80 border-[1px] rounded-2xl z-50 ">
+                <img src="./images/servimg2.jpg" class="servimg z-50 md:h-[39%] lg:h-[56.3%]">
+                <div class="px-9 py-4 lg:py-7 relative bg-white servdiv">
+                <div class="flex md:flex-nowrap flex-wrap-reverse justify-between items-center">
+                    <h2 class="text-myGreen font-titillium font-bold  text-[30px] lg:text-[40px] w-full md:w-auto">Tree care</h2>
+                    <div><img src="./images/sec2icon2.svg" class="opacity-30 w-[80px] h-[80px] "></div>
+                </div>
+                <p class="text-myGreen opacity-90 leading-6 lg:my-5 my-4 text-[15px]">Mauris rutrum at dolor et hendrerit. Morbi porta lobortis ex. Sed sit amet nisi sapien. In at lacus id ligula porttitor suscipit vitae a metus. Mauris sodales justo eros, quis pulvinar tellus vulputate eget.</p>
+                <a href="#" class="block md:inline-block text-center  p-2 px-5 lg:px-10 border-myGreen/90 border-[3px] rounded-lg hover:bg-myGreen font-extrabold tracking-[2px] duration-150 text-myGreen/90 hover:text-white mt-5">VIEW SERVICE</a>
+                </div>
+            </div>
+            <div class="border-myGreen/80 border-[1px] rounded-2xl z-50 ">
+                <img src="./images/servimg3.jpg" class="servimg z-50 ">
+                <div class="px-9 py-4 lg:py-7 relative bg-white servdiv">
+                <div class="flex md:flex-nowrap flex-wrap-reverse justify-between items-center">
+                    <h2 class="text-myGreen font-titillium font-bold  text-[30px] lg:text-[40px] w-full md:w-auto">Pruning</h2>
+                    <div><img src="./images/sec2icon3.svg" class="opacity-30 w-[80px] h-[80px] "></div>
+                </div>
+                <p class="text-myGreen opacity-90 leading-6 lg:my-5 my-4 text-[15px]">Mauris rutrum at dolor et hendrerit. Morbi porta lobortis ex. Sed sit amet nisi sapien. In at lacus id ligula porttitor suscipit vitae a metus. Mauris sodales justo eros, quis pulvinar tellus vulputate eget.</p>
+                <a href="#" class="block md:inline-block text-center  p-2 px-5 lg:px-10 border-myGreen/90 border-[3px] rounded-lg hover:bg-myGreen font-extrabold tracking-[2px] duration-150 text-myGreen/90 hover:text-white mt-5">VIEW SERVICE</a>
+                </div>
+            </div>
+            <div class="border-myGreen/80 border-[1px] rounded-2xl z-50 ">
+                <img src="./images/servimg4.jpg" class="servimg z-50 ">
+                <div class="px-9 py-4 lg:py-7 relative bg-white servdiv">
+                <div class="flex md:flex-nowrap flex-wrap-reverse justify-between items-center">
+                    <h2 class="text-myGreen font-titillium font-bold  text-[30px] lg:text-[40px] w-full md:w-auto">Landscaping</h2>
+                    <div><img src="./images/sec2icon4.svg" class="opacity-30 w-[80px] h-[80px] "></div>
+                </div>
+                <p class="text-myGreen opacity-90 leading-6 lg:my-5 my-4 text-[15px]">Mauris rutrum at dolor et hendrerit. Morbi porta lobortis ex. Sed sit amet nisi sapien. In at lacus id ligula porttitor suscipit vitae a metus. Mauris sodales justo eros, quis pulvinar tellus vulputate eget.</p>
+                <a href="#" class="block md:inline-block text-center  p-2 px-5 lg:px-10 border-myGreen/90 border-[3px] rounded-lg hover:bg-myGreen font-extrabold tracking-[2px] duration-150 text-myGreen/90 hover:text-white mt-5">VIEW SERVICE</a>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+    <!-- lastsection start -->
+    <section>
+        <main class="width90 text-white bg-[#244030] my-[8%] rounded-2xl py-[8%] text-center relative">
+            <div><img src="./images/sec7bg1.svg" class="absolute left-0 top-0 opacity-20 z-10 h-full"></div>
+            <div class="lg:w-[41%] md:w-[66%] w-[80%] mx-auto z-50">
+                <p class="font-raleway text-[#729b58] tracking-[2px] text-base my-3">GET IN TOUCH</p>
+            <h2 class=" font-bold font-titillium">Contact us today to shape a stunning landscape</h2>
+            <a href="#" class="inline-block p-3 px-16 border-myYellow border-[3px] rounded-xl hover:bg-myYellow font-extrabold my-6 tracking-[2px] duration-150">CONTACT</a>
+            </div>
+            <div class="hidden md:inline-block" ><img src="./images/sec7bg2.svg" class="absolute right-0 top-0 opacity-20 z-10 h-full"></div>
+        </main>
+    </section>
+    <!-- lastsection end -->
+<!-- footer start -->
+<footer class="border-t-2 border-[#8fac9b43] py-[4%] ">
+    <div class="width90 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 font-raleway gap-4 text-myGreen text-sm ">
+        <div>
+            <img src="./images/footerlogo.svg" class="w-[150px] pb-2">
+            <p class="pb-1 opacity-80">Mauris sodales justo eros, quis pulvinar</p>
+            <p class="pb-1 opacity-80">tellus vulputate eget. Suspendisse</p>
+            <p class="pb-1 opacity-80">tempus tellus tellus, nec congue elit</p>
+            <p class="pb-1 opacity-80">sollicitudin at.</p>
+        </div>
+        <div>
+            <h3 class="font-extrabold pt-5 pb-4 tracking-wide">CONTACT INFO</h3>
+            <p class="pb-1 opacity-80">PO Box 16122 Collins Street West  </p>
+            <p class="pb-1 opacity-80">Victoria 8007 Australia</p>
+            <p class="pb-1 opacity-80">info@gardener.com</p>
+            <p class="pb-1 opacity-80">+1 310 500 7834</p>
+        </div>
+        <div>
+            <h3 class="font-extrabold pt-5 pb-4 tracking-wide">NAVIGATION</h3>
+            <ul>
+                <li><a href="#" class="pb-1 opacity-80 block hover:text-myYellow duration-150">Services</a></li>
+                <li><a href="#" class="pb-1 opacity-80 block hover:text-myYellow duration-150">About us</a></li>
+                <li><a href="#" class="pb-1 opacity-80 block hover:text-myYellow duration-150">Projects</a></li>
+                <li><a href="#" class="pb-1 opacity-80 block hover:text-myYellow duration-150">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class=" font-extrabold pt-5 pb-4 tracking-wide">SOCIAL MEDIA</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/" class="pb-1 opacity-80 block hover:text-myYellow duration-150">Facebook</a></li>
+                <li><a href="https://www.instagram.com/alshimaa.z.a/" class="pb-1 opacity-80 block hover:text-myYellow duration-150">Instagram</a></li>
+                <li><a href="#" class="pb-1 opacity-80 block hover:text-myYellow duration-150">LinkedIn</a></li>
+                <li><a href="https://twitter.com/?lang=ar" class="pb-1 opacity-80 block hover:text-myYellow duration-150">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Lora:ital,wght@0,600;0,700;1,600;1,700&family=Playfair+Display:wght@400;700;900&family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Lora:ital,wght@0,600;0,700;1,600;1,700&family=Playfair+Display:wght@400;700;900&family=Raleway:wght@100;200;300;400;500&family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles/tailwind.css">
+</head>
+<body>
+    <style>
+        #sec1{
+            background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(./images/sec1bg.jpg);
+            background-position: 0px 0px, 50% 50%;
+            background-size: auto, cover;
+            background-repeat: repeat, no-repeat;
+        }
+        .shadow{
+            box-shadow: 5px 7px 14px 3px rgb(16 34 22 / 20%);;
+        }
+        .shadowsimple{
+            box-shadow: 0px 5px 20px 0px rgba(16, 34, 22, 0.092);;
+        }
+        .ascale:hover{
+            transform: scale(0.95);
+            border-color: #e0a423;
+        }
+        .ascale:hover .translate{
+            transform: translateX(30%);
+        }
+        #radiossec{
+            border-radius: 16px 0px 0px 16px ;
+        }
+        @media screen and (max-width: 991px) {
+            #radiossec{
+            border-radius: 16px 16px 0px 0px ;
+            }
+        }
+        
+    </style>
+
+    <!-- section1 start -->
+    <section  id="sec1" class=" h-[100vh]">
+        <!-- nav start -->
+        <section>
+        <nav  class="width90 shadow text-white bg-[#244030] rounded-2xl flex justify-between px-3 z-[1000] fixed top-8 left-5 right-5"> 
+            <a href="./index.html"><img src="./images/logoicon.svg"></a>
+            <ul class=" flex-nowrap items-center lg:inline-flex hidden ">
+                <li><a href="./services.html" class="mx-3 font-bold text-sm hover:text-myYellow tracking-widest">SERVICES</a></li>
+                <li><a href="./aboutus.html" class="mx-3 font-bold text-sm hover:text-myYellow tracking-widest">ABOUT US</a></li>
+                <li><a href="./project.html" class="mx-3 font-bold text-sm hover:text-myYellow tracking-widest">PROJECT</a></li>
+                <li><a href="./contact.html" class="mx-3 font-bold text-sm bg-myYellow hover:bg-white hover:text-myGreen tracking-widest rounded-xl px-6 py-3">CONTACT</a></li>
+            </ul>
+        </nav>
+        </section>
+        <!-- nav end -->
+    </section>
+    <!-- section1 end -->
+
+    <!-- section2 start -->
+    <section class="relative mt-[10%]">
+        <div><img src="./images/sec2bg.svg" class="absolute left-0 top-0 opacity-10 lg:h-full"></div>
+        <div class="flex flex-wrap md:flex-nowrap justify-between items-center width90">
+            <div class="lg:w-2/5 md:w-1/2">
+                <p class="font-raleway text-[#729b58] tracking-[2px] text-base my-3">LEADER IN LANDSCAPING</p>
+                <h2 class="font-extrabold text-myGreen">Services</h2>
+            </div>
+            <div class="lg:w-2/5 md:w-1/2">
+                <p class="text-myGreen opacity-70 text-sm leading-6 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla</p>
+            </div>
+        </div>
+        <div class="width90 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-[6%] ">
+            <a href="#" class="bg-white/100 text-myGreen border-myGreen/40 border-[1px] rounded-3xl shadowsimple px-8 py-12 z-50 ascale duration-1000">
+                <img src="./images/sec2icon1.svg" class="w-[50px] h-[50px]">
+                <h3 class="text-2xl font-bold text mt-4">Maintenance</h3>
+                <p class=" opacity-80 text-sm leading-6 my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <p class="font-semibold inline-block text-sm mt-5">Read more  </p>
+                <img src="./images/Readmore.svg" class="inline-block translate duration-500">
+            </a>
+            <a href="#" class="bg-white/100 text-myGreen border-myGreen/40 border-[1px] rounded-3xl shadowsimple px-8 py-12 z-50 ascale duration-1000 ">
+                <img src="./images/sec2icon2.svg" class="w-[50px] h-[50px]">
+                <h3 class="text-2xl font-bold text mt-4">Tree care</h3>
+                <p class=" opacity-80 text-sm leading-6 my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <p class="font-semibold inline-block text-sm mt-5">Read more  </p>
+                <img src="./images/Readmore.svg" class="inline-block translate duration-500">
+            </a>
+            <a href="#" class="bg-white/100 text-myGreen border-myGreen/40 border-[1px] rounded-3xl shadowsimple px-8 py-12 ascale duration-1000">
+                <img src="./images/sec2icon3.svg" class="w-[50px] h-[50px]">
+                <h3 class="text-2xl font-bold text mt-4">Pruning</h3>
+                <p class=" opacity-80 text-sm leading-6 my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <p class="font-semibold inline-block text-sm mt-5">Read more  </p>
+                <img src="./images/Readmore.svg" class="inline-block translate duration-500">
+            </a>
+            <a href="#" class="bg-white/100 text-myGreen border-myGreen/40 border-[1px] rounded-3xl shadowsimple px-8 py-12 ascale duration-1000">
+                <img src="./images/sec2icon4.svg" class="w-[50px] h-[50px]">
+                <h3 class="text-2xl font-bold text mt-4">Landscaping</h3>
+                <p class=" opacity-80 text-sm leading-6 my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <p class="font-semibold inline-block text-sm mt-5">Read more  </p>
+                <img src="./images/Readmore.svg" class="inline-block translate duration-500">
+            </a>
+        </div>
+        <a href="#" class="inline-block lg:ml-[43%] md:ml-[40%] ml-[28%] p-2 px-8 lg:px-14 border-myGreen border-[3px] rounded-lg hover:bg-myGreen font-extrabold mt-12  tracking-[2px] duration-150 text-myGreen hover:text-white">SERVICES</a>
+    </section>
+    <!-- section2 end -->
+
+    <!-- section3 start -->
+    <section class="relative">
+        <div><img src="./images/sec3bg.svg" class="absolute right-0 top-0 opacity-10 lg:h-full z-10"></div>
+        <div class="width90 flex flex-wrap md:flex-nowrap justify-between items-center my-[10%]">
+            <div class="lg:w-2/5 md:w-[47%]">
+                <p class="font-raleway text-[#729b58] tracking-[2px] text-base my-3">ABOUT US</p>
+                <h2 class="text-myGreen font-titillium font-extrabold leading-8 lg:leading-[45px]">A beautiful garden is <br> a work of <span class="text-myYellow">Art</span>.</h2>
+                <p class="text-myGreen opacity-70 text-sm leading-6 my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat</p>
+                <p class="text-myGreen opacity-70 text-sm leading-6 mb-7">Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+            </div>
+            <div class="bg-myGreen bg-no-repeat bg-center bg-cover rounded-2xl lg:w-1/2 md:w-[43%] md:h-[360px] h-[270px] z-50"><img src="./images/sec3img.jpg" class="w-full h-full rounded-2xl"></div>
+        </div>
+        <div class="flex flex-wrap lg:flex-nowrap items-center rounded-2xl bg-myGreen width90 z-50 font-bold font-titillium">
+            <div id="radiossec" class="bg-[#3b6149] lg:w-[25%] w-full lg:px-[5%] md:px-[12%] px-[16%] py-[3%]">
+                <p class="font-raleway text-white tracking-[2px] text-sm my-3 text-center lg:text-left">SOME NUMBERS</p>
+                <h2 class=" text-white mb-7">What we did so far</h2>
+            </div>
+            <div class="flex flex-wrap md:flex-nowrap item-center text-center lg:w-[70%] w-full ">
+                <div class="md:w-[33%] w-full py-[9%]">
+                    <h2 class="  text-myYellow">350+</h2>
+                    <p class=" text-white mt-4 tracking-[1px]">COMPLETED PROJECTS</p>
+                </div>
+                <div class="md:w-[33%] w-full py-[9%]">
+                    <h2 class="  text-myYellow">12+</h2>
+                    <p class="text-white mt-4 tracking-[1px]">YEARS EXPERIENCE</p>
+                </div>
+                <div class="md:w-[33%] w-full py-[9%] z-[1000]">
+                    <h2 class=" text-myYellow">5+</h2>
+                    <p class=" text-white mt-4 tracking-[1px]">TEAMMEMBERS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section3 end -->
+
+    <!-- section4 start -->
+    <section class="relative my-[8%]">
+        <div><img src="./images/sec3bg.svg" class="absolute right-0 bottom-0 opacity-10 lg:h-3/5 z-10"></div>
+        <div class="flex flex-wrap lg:flex-nowrap flex-row-reverse width90 justify-between ">
+            <div class="rounded-2xl border-[1px] border-myGreen/50 p-[12%] md:p-[4%] md:pl-[7%] lg:p-[4%] lg:sticky top-1 right-0 bg-white z-50 h-[18%] lg:ml-4 mb-7 mt-0 lg:w-[40%]">
+                <p class="font-raleway text-[#729b58] tracking-[2px] text-base mb-3">PROJECTS</p>
+                <h2 class="text-myGreen font-titillium font-extrabold ">A peak of our landscape <span class="text-myYellow">creations</span></h2>
+                <p class="text-myGreen opacity-70 text-sm leading-6 my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                <a href="#" class="block md:inline-block text-center  p-2 px-5 lg:px-10 border-myGreen/80 border-[3px] rounded-lg hover:bg-myGreen font-extrabold mt-5 tracking-[2px] duration-150 text-myGreen/90 hover:text-white">PROJECTS</a>
+            </div>
+            <div class="flex flex-wrap md:flex-nowrap w-full lg:w-auto">
+                <div class="md:pb-[4%] md:mr-[2%]">
+                    <div class="rounded-2xl w-[330px] h-[370px] my-4"><img src="./images/sec4img1.jpg" class="h-full w-full rounded-2xl"></div>
+                    <div class="rounded-2xl w-[330px] h-[370px] my-4"><img src="./images/sec4img3.jpg" class="h-full w-full rounded-2xl"></div>
+                    <div class="rounded-2xl w-[330px] h-[370px] my-4"><img src="./images/sec4img5.jpg" class="h-full w-full rounded-2xl"></div>
+                </div>
+                <div class="md:pt-[4%]">
+                    <div class="rounded-2xl w-[330px] h-[370px] my-4"><img src="./images/sec4img2.jpg" class="h-full w-full rounded-2xl"></div>
+                    <div class="rounded-2xl w-[330px] h-[370px] my-4"><img src="./images/sec4img4.jpg" class="h-full w-full rounded-2xl"></div>
+                    <div class="rounded-2xl w-[330px] h-[370px] my-4 z-50"><img src="./images/sec4img6.jpg" class="h-full w-full rounded-2xl z-50"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section4 end -->
+
+    <!-- lastsection start -->
+    <section>
+        <main class="width90 text-white bg-[#244030] my-[8%] rounded-2xl py-[8%] text-center relative">
+            <div><img src="./images/sec7bg1.svg" class="absolute left-0 top-0 opacity-20 z-10 h-full"></div>
+            <div class="lg:w-[41%] md:w-[66%] w-[80%] mx-auto z-50">
+                <p class="font-raleway text-[#729b58] tracking-[2px] text-base my-3">GET IN TOUCH</p>
+            <h2 class=" font-bold font-titillium">Contact us today to shape a stunning landscape</h2>
+            <a href="#" class="inline-block p-3 px-16 border-myYellow border-[3px] rounded-xl hover:bg-myYellow font-extrabold my-6 tracking-[2px] duration-150">CONTACT</a>
+            </div>
+            <div class="hidden md:inline-block" ><img src="./images/sec7bg2.svg" class="absolute right-0 top-0 opacity-20 z-10 h-full"></div>
+        </main>
+    </section>
+    <!-- lastsection end -->
+<!-- footer start -->
+<footer class="border-t-2 border-[#8fac9b43] py-[4%]">
+    <div class="width90 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 font-raleway gap-4 text-myGreen text-sm ">
+        <div>
+            <img src="./images/footerlogo.svg" class="w-[150px] pb-2">
+            <p class="pb-1 opacity-80">Mauris sodales justo eros, quis pulvinar</p>
+            <p class="pb-1 opacity-80">tellus vulputate eget. Suspendisse</p>
+            <p class="pb-1 opacity-80">tempus tellus tellus, nec congue elit</p>
+            <p class="pb-1 opacity-80">sollicitudin at.</p>
+        </div>
+        <div>
+            <h3 class="font-extrabold pt-5 pb-4 tracking-wide">CONTACT INFO</h3>
+            <p class="pb-1 opacity-80">PO Box 16122 Collins Street West  </p>
+            <p class="pb-1 opacity-80">Victoria 8007 Australia</p>
+            <p class="pb-1 opacity-80">info@gardener.com</p>
+            <p class="pb-1 opacity-80">+1 310 500 7834</p>
+        </div>
+        <div>
+            <h3 class="font-extrabold pt-5 pb-4 tracking-wide">NAVIGATION</h3>
+            <ul>
+                <li><a href="#" class="pb-1 opacity-80 block hover:text-myYellow duration-150">Services</a></li>
+                <li><a href="#" class="pb-1 opacity-80 block hover:text-myYellow duration-150">About us</a></li>
+                <li><a href="#" class="pb-1 opacity-80 block hover:text-myYellow duration-150">Projects</a></li>
+                <li><a href="#" class="pb-1 opacity-80 block hover:text-myYellow duration-150">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class=" font-extrabold pt-5 pb-4 tracking-wide">SOCIAL MEDIA</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/" class="pb-1 opacity-80 block hover:text-myYellow duration-150">Facebook</a></li>
+                <li><a href="https://www.instagram.com/alshimaa.z.a/" class="pb-1 opacity-80 block hover:text-myYellow duration-150">Instagram</a></li>
+                <li><a href="#" class="pb-1 opacity-80 block hover:text-myYellow duration-150">LinkedIn</a></li>
+                <li><a href="https://twitter.com/?lang=ar" class="pb-1 opacity-80 block hover:text-myYellow duration-150">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
